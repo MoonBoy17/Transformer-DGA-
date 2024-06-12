@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer Oil Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transformer Oil Analysis</h1>
+        <p>Enter the gas concentrations to analyze the condition of the transformer.</p>
+        <form id="dgaForm">
+            <label for="CH4">CH4 (ppm):</label>
+            <input type="number" id="CH4" name="CH4" value="51"><br>
+
+            <label for="C2H6">C2H6 (ppm):</label>
+            <input type="number" id="C2H6" name="C2H6"  value="30"><br>
+
+            <label for="C2H4">C2H4 (ppm):</label>
+            <input type="number" id="C2H4" name="C2H4"  value="140"><br>
+
+            <label for="C2H2">C2H2 (ppm):</label>
+            <input type="number" id="C2H2" name="C2H2"  value="0"><br>
+
+            <label for="H2">H2 (ppm):</label>
+            <input type="number" id="H2" name="H2"  value="32"><br>
+
+            <label for="CO">CO (ppm):</label>
+            <input type="number" id="CO" name="CO"  value="75"><br>
+
+            <label for="CO2">CO2 (ppm):</label>
+            <input type="number" id="CO2" name="CO2"  value="3596"><br>
+
+            <button type="submit">Evaluate</button>
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <div id="keyGasResult"></div>
+            <div id="duvalResult"></div>
+            <div id="iecResult"></div>
+            <div id="rogerResult"></div>
+            <div id="dorenburgResult"></div>
+            <div id="roger4Result"></div>
+            <div id="co2coResult"></div>
+          
+        </div>
+      
+    </div>
+      <div class="footer">
+        Created by Harsh Sukhwal. 
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
